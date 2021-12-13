@@ -1,4 +1,5 @@
 apply plugin: 'application'
+apply plugin: 'war'
 
 mainClassName = 'com.builders.web.HelloServlet'
 
@@ -6,4 +7,8 @@ dependencies {
     implementation project(':services')
     testImplementation project(':utils')
     compileOnly 'javax.servlet:servlet-api:2.5'
+}
+
+war {
+    archiveName 'web.war'
 }
