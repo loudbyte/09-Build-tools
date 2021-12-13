@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+mainClassName = 'com.builders.admin.AdminEntryPoint'
+
+dependencies {
+    implementation project(':services')
+    testImplementation project(':services')
+    testImplementation project(':utils')
+}

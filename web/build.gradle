@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+mainClassName = 'com.builders.web.HelloServlet'
+
+dependencies {
+    implementation project(':services')
+    testImplementation project(':utils')
+    compileOnly 'javax.servlet:servlet-api:2.5'
+}
